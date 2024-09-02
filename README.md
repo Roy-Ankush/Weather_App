@@ -31,19 +31,19 @@ The purpose of this weather application project is to provide users with real-ti
 </p>
 
 <h2 align="center">Anderoid Responsiveness</h2>
-<p align="center" width="80"  height="50">
-    <img src="./weather/Andriod1.png">
-    <img src="./weather/Android.png">
+<p align="center">
+    <img src="./weather/Andriod1.png" height="400">
+    <img src="./weather/Android.png" height="400">
 </p>
 
 <h2 align="center">IOS Responsiveness</h2>
-<p align="center" width="80"  height="50">
-    <img src="./weather/Ios.png">
+<p align="center">
+    <img src="./weather/Ios.png" height="400">
 </p>
 
 <h2 align="center">Tabs Responsiveness</h2>
-<p align="center" width="80" height="50">
-    <img src="./weather/Tab.png">
+<p align="center">
+    <img src="./weather/Tab.png" height="400">
 </p>
 
 

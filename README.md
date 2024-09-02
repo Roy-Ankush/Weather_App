@@ -37,7 +37,7 @@ The purpose of this weather application project is to provide users with real-ti
 </p>
 
 <h2 align="center">Anderoid Responsiveness</h2>
-<p align="center">
+<p>
     <img src="./weather/Andriod1.png">
     <img src="./weather/Android.png">
 </p>

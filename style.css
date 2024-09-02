@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./weather/weather.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.weather{
+    height: 82vh;
+    width: 50vw;
+    /* border: solid rgb(143, 23, 23) 2px; */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.top{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid red 2px; */
+    margin-top: 25px;
+    filter: drop-shadow(10px 5px 10px rgb(0, 0, 0));
+    padding: 3px;
+}
+.bottom{
+    width: 50vw;
+    display: grid;
+    /* border: solid black 2px; */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    margin-top: 25px; 
+    row-gap: 30px;
+    padding: 3px;
+}
+
+.details{
+    width: 30vw;
+    /* border: solid black 2px; */
+    border-radius: 15px;
+    /* filter: drop-shadow(10px 5px 10px rgb(0, 0, 0)); */
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color:#FFBF78;
+    border: solid rgb(203, 171, 9) 2px;
+    padding: 8px;
+}
+
+
+.base{
+    height: 12vh;
+    width: 20vw;
+    border: solid black 2px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    filter: drop-shadow(10px 5px 10px rgb(0, 0, 0));
+    background-color:#FFBF78; 
+}
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(74, 67, 2) 2px;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-radius: 2%;
+    background-color: #E48F45;
+    background-image: url(./weather/dust.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#city{
+    border-radius: 5px;
+    padding: 8px 15px;
+    background-color: black;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20vw;
+    height: 5vh;
+    border: solid black 1px;
+    margin: 22px;
+    border-radius: 10px;
+    background-color: black;
+}
+input::placeholder{
+  color: #f7f7f7;
+}
+.bi-search{
+    color: #f7f7f7;
+}
+.bi{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.forecast{
+    height: 3vh;
+    padding: 2px 15px;
+    /* border:  solid black 2px; */
+    /* border-radius: 15px; */
+    font-size: large;
+    font-weight: bolder;
+}
+/* .weather_icon{
+    font-size: xx-large;
+    font-weight: bolder;
+} */
+.weather_min{
+    left: -10px;
+    position: relative;
+}
+.weather_max{
+    left: 15px;
+    position: relative;
+}
+
+.feels, .pressure, .humidity, .wind {
+    /* border: solid blue 2px; */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.heroimage,.textvalue{
+    height: 10vh;
+    /* border: solid burlywood 2px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+/* media query for input field */
+@media only screen and (max-width: 1400px) {
+    .searchbar{
+        width: 25vw;
+    }
+  }
+@media only screen and (min-width: 800px) and (max-width: 950px) {
+    .searchbar {
+        width: 30vw;
+        align-self: center;
+    }
+    .top{
+        width: 70vw;
+    }
+    .details{
+        width: 45vw;
+    }
+    .bottom{
+        width: 70vw;
+    }
+    .base{
+        width: 25vw;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+   
+    .searchbar {
+        width: 30vw;
+        align-self: center;
+    }
+    .details{
+        width: 70vw;
+        
+    }
+    .bottom{
+        width: 70vw;
+    }
+    .base{
+        width: 25vw;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    
+    .searchbar {
+        width: 60vw;
+        align-self: center;
+    }
+    .details{
+        width: 70vw;
+        
+    }
+    .top{
+        width: 70vw;
+    }
+    .bottom{
+        width: 70vw;
+    }
+    .base{
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .searchbar {
+        width: 60vw;
+        align-self: center;
+    }
+    .top{
+        width: 100vw;
+    }
+    .details {
+        width: 85vw;
+       
+    }
+    .bottom {
+        width: 100vw;
+    }
+    .base {
+        width: 45vw;
+    }
+}
+  
